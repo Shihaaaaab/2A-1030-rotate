@@ -1,0 +1,35 @@
+  body {
+    background-color: #111;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+    .shape {
+    width: 150px;
+    height: 100px;
+    background-color: red;
+    border-radius: 0;
+  animation: moveAndTransform 4s ease-in-out forwards;
+  }
+
+  @keyframes moveAndTransform {
+    0% {
+      transform: rotate(0deg) translateX(0);
+      background-color: red;
+      border-radius: 0;
+    }
+    50% {
+      transform: rotate(360deg) translateX(0);
+    }
+    100% {
+      transform: rotate(360deg) translateX(600px);
+      background-color: yellow;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  
